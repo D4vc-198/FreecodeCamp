@@ -1,0 +1,112 @@
+body{
+    background-color: #ECECEC;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Contenedor formulario*/
+.container{
+    width: 100%;
+    margin: 3.5em auto 0 auto;
+}
+
+/*Titulo*/
+.titulo-container{
+    background-color: #040C33;
+    color: #FFF;
+    padding: 1.5em 1.8em;
+    text-align: center;
+    border-radius: .5em .5em 0 0;
+}
+/*Texto titulo*/
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+/*FORMULARIO*/
+form{
+    padding: 2.5rem 0.625rem;
+    background-color: #FFF;
+}
+
+.form-group{
+    margin: 0 0 20px 0;
+}
+
+.label-input, form p{
+    font-size: 17px;
+    color: #6d6b6b;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.form-control{
+    display: block;
+    width: -webkit-fill-available;
+    height: 1.2rem;
+    padding: 0.375rem 0.75rem;
+    font-size: 17px;
+    background-color: rgb(235, 231, 231);
+    border: 1px solid rgb(235, 231, 231);
+    border-radius: 5px;
+}
+
+
+
+form label{
+    display: block;
+}
+
+.enviar{
+    color: #FFF;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #EB026B;
+    width: 100%;
+    padding: 0.8em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.enviar:hover{
+    background-color: #ca0960;
+    transform: scale(1.03);
+}
+
+/* 
+@media (min-width: 576px) {
+    .container{
+        max-width: 540px;
+    }  
+} */
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .titulo-container{
+        border-radius: 0;
+    }
+    
+    .text-area {
+        width: -webkit-fill-available;
+        height: 10vh;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container{
+        max-width: 540px;
+    } 
+
+    .text-area {
+        width: -webkit-fill-available;
+        height: 10vh;
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="titulo-container">
+                <h1 id="title" class="titulo-principal">freeCodeCamp Survey Form</h1>
+                <p id="description">Thank you, we will take all your opinions into account to improve our site.</p>
+            </div>
+            
+            <form id="survey-form">
+                <!--Nombre-->
+                <div class="form-group">
+                    <label for="name" id="name-label" class="label-input">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="Ingrese su nombre" class="form-control" required>
+                </div>
+                <!--Correo-->
+                <div class="form-group">
+                    <label for="email" id="email-label" class="label-input">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico" class="form-control" required>
+                </div>
+
+                <!--Edad-->
+                <div class="form-group">
+                    <label for="age" id="number-label" class="label-input">Edad</label>
+                    <input type="number" name="age" id="number" min="1" max="2" placeholder="Edad" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <p>A que se dedica actualmente</p>
+                    <select id="dropdown">
+                        <option>Estudiante</option>
+                        <option>Trabajo tiempo parcial</option>
+                        <option>Trabajo tiempo completo</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p>¿Recomendaría el sitio a un amigo?</p>
+                    <label for="radio-si"><input type="radio" value="si" name="recomendacion" id="radio-si">Si</label>
+                    <label for="radio-no"><input type="radio" value="no" name="recomendacion" id="radio-no">No</label>
+                    <label for="radio-notsure"><input type="radio" value="notsure" name="recomendacion" id="radio-notsure">No estoy seguro</label>
+                </div>
+
+                <div class="form-group">
+                    <p>Que mejoraría del sitio web</p>
+                    <label><input type="checkbox" value="design" checked>Diseño</label>
+                    <label><input type="checkbox" value="foro">Foro</label>
+                    <label><input type="checkbox" value="proyectos">Proyectos</label>
+                    <label><input type="checkbox" value="retos">Retos</label>
+                    <label><input type="checkbox" value="cursos">Cursos adicionales</label>
+                </div>
+
+                <div class="form-group">
+                    <p>¿Algún comentario o sugerencia?</p>
+                    <!-- <textarea class="text-area" cols="50" rows="10"></textarea> -->
+                    <textarea class="text-area"></textarea>
+                </div>
+
+                <input type="submit" id="submit" value="Enviar" class="enviar">
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
