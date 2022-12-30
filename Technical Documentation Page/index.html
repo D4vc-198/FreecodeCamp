@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Page</title>
+</head>
+<body>
+    <nav id="navbar" class="sidebar">
+        <header class="sidebar-header">
+            <img src="img/unity-logo.png">
+            <h1>Unity Manual</h1>
+        </header>
+  
+        <a class="nav-link active" href="#Experiencia_de_Juego_en_2D">Experiencia de Juego en 2D</a>
+        <a class="nav-link" href="#Gráficas_2D">Gráficas 2D</a>
+        <a class="nav-link" href="#2D_physics">2D physics</a>
+        <a class="nav-link" href="#Physics.Raycast">Physics.Raycast</a>
+        <a class="nav-link" href="#Tilemap">Tilemap</a>
+    </nav>
+
+    <div id="main-doc" class="main">
+        <section class="main-section" id="Experiencia_de_Juego_en_2D">
+            <header>
+                <h1>Experiencia de Juego en 2D</h1>
+            </header>
+
+            <article>
+                <p>Mientras es famoso por sus capacidades en 3D, Unity también puede ser usado para crear juegos 2D. Las funciones familiares del editor están todavía disponibles, pero con adiciones útiles para simplificar el desarrollo en 2D.</p>
+
+                <div class="img-article">
+                    <img  src="img/experiencia_juego_2d.jpg">
+                    <figcaption>Escena vista desde un modo 2D</figcaption>
+                </div>
+
+                <p>La característica que más se nota es el botón del modo en vista 2D en la barra de herramientas del Scene View. Cuando el modo 2D es activado, una vista ortográfica (ie, libre de perspectiva) va a ser establecida; la cámara ve a lo largo del eje X con el eje Y aumentando hacia arriba. Esto le permite visualizar la escena y poner objetos 2D fácilmente.</p>
+                <br>
+                <p></p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Gráficas_2D">
+            <header>
+                <h1>Gráficas 2D</h1>
+            </header>
+
+            <article>
+                <p>Los objetos gráficos en 2D son conocidos como <strong>Sprites</strong>. Los Sprites son nada más que unas texturas estándar pero hay varias técnicas para combinar y manejar las texturas sprites por rendimiento y conveniencia durante el desarrollo. Unity proporciona un Sprite Editor integrado para permitirle extraer gráficas sprites desde una imagen más grande. Esto le permite a usted editar un número de componentes de imagen dentro de una sola textura en su editor de imagen. Usted puede utilizar esto por ejemplo, para mantener los brazos, las piernas y el cuerpo de un personaje como elementos separados en una imagen.</p>
+                <br>
+                <p>Los Sprites son renderizados con un componente Sprite Renderer en vez de un Mesh Renderer usado con objetos 3D. Usted puede agregar esto a un GameObject mediante el menú de Components (<strong>Component > Rendering > Sprite Renderer</strong> o alternativamente, usted puede crear un GameObject directamente con un Sprite Renderer que esté ya adjuntado (menú:<strong> GameObject > 2D Object > Sprite</strong>). Adicionalmente, usted puede utilizar una herramienta Sprite Creator para hacerle lugar a imágenes 2D.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="2D_physics">
+            <header>
+                <h1>2D physics</h1>
+            </header>
+
+            <article>
+                <p>Unity cuenta con un motor de física separado para el manejo de la física en 2D con el fin de hacer uso de optimizaciones disponibles únicamente en 2D. Los components corresponden a los components de física estándar 3D como Rigidbody, Box Collider y Hinge Joint, pero con “2D” agregado al nombre. Entonces, los sprites pueden ser equipados con Rigidbody 2D, Box Collider 2D y Hinge Joint 2D. La mayoría de los components de física en 2D son simplemente versiones “aplanadas” del equivalente en 3D (eg, Box Collider 2D es un cuadrado mientras Box Collider es un cubo) pero hay unas pequeñas excepciones.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Physics.Raycast">
+            <header>
+                <h1>Physics.Raycast</h1>
+            </header>
+
+            <article>
+                <h3>Declaracíon</h3>
+                <div class="code-section">
+                    <code>
+                        public static bool Raycasy(Vector3 origin, Vector3 directrio, float maxDistance = Mathf.Infinity, int layerMask = DefaultRaycastLayers, QueryTriggerInteraction queryTriggerInteraction = QueryTriggerInteraction.UseGlobal);
+                    </code>
+                </div>
+                <br>
+                <h3>Parámetros</h3>
+                <table>
+                    <tr>
+                        <td><strong>origin</strong></td>
+                        <td>El punto de partida del rayo en las coordenadas del mundo.</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>direction</strong></td>
+                        <td>La dirección del rayo.</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>maxDistance</strong></td>
+                        <td>La distancia máxima que el rayo debe verificar para detectar colisiones</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>layerMask</strong></td>
+                        <td>Máscara de capa que se utiliza para ignorar selectivamente a los colisionadores al lanzar un rayo.</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>queryTriggerInteraction</strong></td>
+                        <td>Especifica si esta consulta debe alcanzar Desencadenadores.</td>
+                    </tr>
+                </table>
+
+                <br>
+                <h3>Devuelve</h3>
+                <p><strong>bool</strong> Devuelve true si el rayo cruza con un colisionador, de lo contrario false.</p>
+                
+                <br>
+                <h3>Descripción</h3>
+                <p>Lanza un rayo, desde el punto <code class="code-line">origin</code>, en dirección <code class="code-line">direction</code>, de longitud <code class="code-line">maxDistance</code>, contra todos los colisionadores de la escena.</p>
+                <br>
+                <p>Opcionalmente, puede proporcionar una LayerMask, para filtrar cualquier Colisionador con el que no esté interesado en generar colisiones</p>
+                <br>
+                <p>Especificar <code class="code-line">queryTriggerInteraction</code> le permite controlar si los colissionadores trigger generan o no un hit, o si se debe utilizar el global Physics.queriesHitTriggers ajuste.</p>
+                <br>
+                <p><strong>Nota:</strong> Los Raycast no detectarán Colisionadores para los cuales el origen de Raycast esté dentro del colisionador. En todos estos ejemplos se utiliza FixedUptade en lugar de Update.</p>
+
+            </article>
+        </section>
+
+        <section class="main-section" id="Tilemap">
+            <header>
+                <h1>Tilemap</h1>
+            </header>
+
+            <article>
+                <p>El componente <strong>Tilemap</strong> es un sistema que almacena y maneja activos de mosaico para crear niveles 2D. Transfiere la información requerida de los mosaicos colocados en él a otros componentes relacionados, como el Tilemap Render y el Tilemap Collider 2D. Este paquete no está incluido en la instalación predeterminada de Unity Editor de forma predeterminada, y deberá descargar el paquete <strong>2D Tilemap Editor</strong> a través del Administrador de paquetes.</p>   
+                <br>
+                <p>Al crear un Tilemap, el componente Grid se incorpora automaticamente al Tilemap y actúa como guía para diseñar Tiles en el Tilemap.</p> 
+                <br>
+                <p>Paara crear, modificar y elegir los mosaicos para pintar en un mapa de mosaicos, use la Paleta de mosaicos(menú: <strong>Ventana > 2D Palete de mosaicos</strong>) y sus herramientas.</p>
+
+                <div class="img-article">
+                    <img src="img/tilemap-properties-2021.1.png">
+                    <figcaption>Ventada de propiedad Tilemap</figcaption>
+                </div>
+
+                <table>
+                    <tr>
+                        <th class="th-header">Propiedad</th>
+                        <th class="th-header">Funcion</th>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Animation Frame Rate</strong></td>
+                        <td>La velocidad a laque Unity reproduce animaciones de mosaico. Al aumentar o disminuir esto, se cambia la velocidad en el factor equivalente (por ejemplo, si lo estableces en 2, Unity reproduce animaciones de mosaico al doble de velocidad).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Color</strong></td>
+                        <td>Seleccione un color para aplicarlo como tinte a los mosaicos de este mapa de mosaicos. Establece en blanco (color predeterminado) para que Unity represente los mosaicos sin tinte.</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Tile Anchor</strong></td>
+                        <td>Introduzca la cantidad (en celdas) a lo largo de los ejes XYZ para desplazar las posiciones de anclaje de mosaico en el mapa de mosaicos.</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Orientation</strong></td>
+                        <td>Seleccione la orientación de los mosaicos en el mapa de mosaicos. Utilice esto si necesita orientar los mosaicos a lo largo de un plano específico.</td>
+                    </tr>
+
+                    <tr>
+                        <td>XY</td>
+                        <td>Unity orienta los Tiles a lo largo del plano XY.</td>
+                    </tr>
+                    <tr>
+                        <td>XZ</td>
+                        <td>Unity orienta los Tiles a lo largo del plano XZ</td>
+                    </tr>
+                    <tr>
+                        <td>YX</td>
+                        <td>Unity orienta los Tiles a lo largo del plano YX</td>
+                    </tr>
+                    <tr>
+                        <td>YZ</td>
+                        <td>Unity orienta los Tiles a lo largo del plano YZ</td>
+                    </tr>
+                    <tr>
+                        <td>ZX</td>
+                        <td>Unity orienta los Tiles a lo largo del plano ZX</td>
+                    </tr>
+                    <tr>
+                        <td>ZY</td>
+                        <td>Unity orienta los Tiles a lo largo del plano ZY</td>
+                    </tr>
+                    <tr>
+                        <td>Custom</td>
+                        <td>Seleccione esta opción para habilitar la configuración de orientación personalizada a continuación</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Position</strong></td>
+                        <td>Establezca el desplazamiento de posición de la orientación personalizada. Esta opción está deshabilitada de forma predeterminada y está habilitada cuando la Orientación del Tilemap se establece en Personalizado.</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Rotation</strong></td>
+                        <td>Establezca la rotación de la orientación personalizada. Esta opción esta deshabilitada de forma predeterminada y está habilitada cuando la Orientación del Tilemap se establece en Personalizado</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Scale</strong></td>
+                        <td>Establezca la escala de la orientación personalizada. Esta opción está deshabilitada de forma predeterminada y está habilitada cuando la Orientación del Tilemap se establece en Personalizado.</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Info</strong></td>
+                        <td>Expanda esto para mostrar los Asssets utilizados en el Tilemap.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tiles</td>
+                        <td>Muestra una lista de los Assets de Tiles utilizados en el mapa de mosaicos.</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Sprites</strong></td>
+                        <td>Muestra una lista de Sprites utilizados en el Tilemap.</td>
+                    </tr>
+                </table>
+                <br>
+                <hr>
+                <ul>
+                    <li>Contenido de la página y captura de pantalla actualizados para 2021.1</li>
+                    
+                    <li>Contenido de la página y capturas de pantalla actualizados para 2020.1</li>
+                    
+                    <li>2D Tilemap Editor ya no se incluye con la instalación de Editor y debe descargarse desde el Administrador de paquetes. Año 2019.2</li>
+                    
+                    <li>Funcionalidad isométrica de Tilemap agregada en Unity 2018.3</li>
+                    
+                    <li>Funcionalidad hexagonal de Tilemap agregada en Unity 2018.2</li>
+                    
+                    <li>Tilemaps agregados en 2017.2</li>
+                </ul>
+
+            </article>
+        </section>
+
+    </div>
+    <script src="behaviour.js"></script>
+</body>
+</html>

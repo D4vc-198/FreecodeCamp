@@ -1,0 +1,104 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000;
+    color: #FFF;
+    line-height: 1.6;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    font-style: italic;
+    background-color: #000;
+    color: #FFD700;
+}
+
+.title{
+    width: 60%;
+    text-align: center;
+    padding: 100px 0;
+}
+
+h1{
+    font-size: 5em;
+    padding: 0 0 5px 0;
+    color: #fff;
+}
+
+.title-image figcaption{
+    font-style: italic;
+    margin: 0 0 0 0;
+    text-align: center;
+    padding: 0 0 10px 0;
+}
+
+.title-image{
+    width: 30%;
+    margin: 110px 0;
+    filter: grayscale(180%);
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.info{
+    width: 95%;
+    margin: 2em auto;
+}
+
+.about{
+    font-size: 2em;
+}
+
+.info-container{
+    display: flex;
+}
+
+.tribute-info{
+    width: 65%;
+    padding: 20px 40px;
+    font-size: .9em;
+}
+
+.img-info{
+    width: 30%;
+    text-align: center;
+}
+
+#img{
+    filter: grayscale(180%);
+}
+
+.proyectos{
+    width: 95%;
+}
+
+.proyectos h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+.lista-proyectos{
+    width: 50%;
+    margin: auto;
+}
+
+.lista-proyectos li{
+    margin: 1em 0;
+}
+
+.list{
+    list-style: disc;
+}
+
+.list strong{
+    font-weight: bold;
+}
+
+.referencia{
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+}
