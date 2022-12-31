@@ -17,15 +17,15 @@ Finally, you'll learn how to make webpages that respond to different screen size
 <h2>Certification Projects</h2>
 </div>
 
-**- :heavy_check_mark: Survey Form. <a href="https://d4vc-198.github.io/FreecodeCamp/Survey%20Form/"><img src="https://img.shields.io/badge/Demo-Available-informational"></a>**
+**- :heavy_check_mark: Survey Form. <a href="https://d4vc-198.github.io/FreecodeCamp/Survey%20Form/" target="_blank"><img src="https://img.shields.io/badge/Demo-Available-informational"></a>**
 
-**- :heavy_check_mark: Tribute Page.<a href="https://d4vc-198.github.io/FreecodeCamp/Tribute%20Page/"><img src="https://img.shields.io/badge/Demo-Available-informational"></a>**
+**- :heavy_check_mark: Tribute Page.<a href="https://d4vc-198.github.io/FreecodeCamp/Tribute%20Page/" target="_blank"><img src="https://img.shields.io/badge/Demo-Available-informational"></a>**
 
-**- :heavy_check_mark: Technical Documentation Page. <a href="https://d4vc-198.github.io/FreecodeCamp/Technical%20Documentation%20Page/"><img src="https://img.shields.io/badge/Demo-Available-informational"></a>**
+**- :heavy_check_mark: Technical Documentation Page. <a href="https://d4vc-198.github.io/FreecodeCamp/Technical%20Documentation%20Page/" target="_blank"><img src="https://img.shields.io/badge/Demo-Available-informational"></a>**
 
-**- :heavy_check_mark: Product Landing Page. <a><img src="https://img.shields.io/badge/Demo-Not%20Available-red"></a>**
+**- :heavy_check_mark: Product Landing Page. <a target="_blank"><img src="https://img.shields.io/badge/Demo-Not%20Available-red"></a>**
 
-**- :heavy_check_mark: Personal Portafolio WebPage. <a href="https://d4vc-198.github.io/portafolio/"><img src="https://img.shields.io/badge/Demo-Available-informational"></a>**
+**- :heavy_check_mark: Personal Portafolio WebPage. <a href="https://d4vc-198.github.io/portafolio/" target="_blank"><img src="https://img.shields.io/badge/Demo-Available-informational"></a>**
 
 <h1 align="center" >🏆 Certification <a href="https://freecodecamp.org/certification/Diego_A_Valdez/responsive-web-design"><img src="https://img.shields.io/badge/Verified-00a200?style=for-the-badge"></a>🏆</h1>
 
