@@ -1,5 +1,6 @@
 ![fcc_primary_large](https://user-images.githubusercontent.com/69604964/210123876-e6ebc115-04fc-4cde-9ab2-039545ed3e78.jpg)
 
+
 <div>
 <h1 align="center">Responsive Web Design</h1>
 <p>
@@ -11,7 +12,22 @@ Finally, you'll learn how to make webpages that respond to different screen size
 </p>
 </di1v>
 
-## $\colorbox{#0A0A22}{{\color{white}{Certification\ Projects}}}$
-<div style="background-color:#2e3136">
+<br>
+<div>
 <h2>Certification Projects</h2>
 </div>
+
+**- :heavy_check_mark: Survey Form.**
+
+**- :heavy_check_mark: Tribute Page.**
+
+**- :heavy_check_mark: Technical Documentation Page.**
+
+**- :heavy_check_mark: Product Landing Page.**
+
+**- :heavy_check_mark: Personal Portafolio WebPage.**
+<h1 align="center" >🏆 Certification <a href="https://freecodecamp.org/certification/Diego_A_Valdez/responsive-web-design"><img src="https://img.shields.io/badge/Verified-00a200?style=for-the-badge"></a>🏆</h1>
+
+![certification](https://user-images.githubusercontent.com/69604964/210125283-6f88655c-71b7-40d0-8a72-25b8b4d8e515.PNG)
+
+
