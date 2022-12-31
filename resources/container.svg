@@ -1,0 +1,38 @@
+<svg fill="none" viewBox="0 0 800 400" width="900" height="500" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<style>
+				.container {
+                    font-family: "Gill Sans", sans-serif;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					margin: 0;
+					width: 100%;
+					height: 400px;
+					<!-- background: linear-gradient(-45deg, #fc5c7d, #6a82fb, #05dfd7); -->
+                    background: #0A0A22;
+					background-size: 600% 400%;
+					color: white;
+					text-align: center;
+				}
+				h1 {
+					font-size: 50px;
+					line-height: 1.3;
+				}
+				p {
+					font-size: 20px;
+				}
+			</style>
+			<div class="container">
+				<h1>Responsive Web Design</h1>
+				<p>In this Responsive Web Design Certification, you'll learn the languages that developers use to build webpages: HTML (Hypertext Markup Language) for content, and CSS (Cascading Style Sheets) for design.</p>
+
+                <p>First, you'll build a cat photo app to learn the basics of HTML and CSS. Later, you'll learn modern techniques like CSS variables by building a penguin, and best practices for accessibility by building a quiz site.</p>
+
+                <p>Finally, you'll learn how to make webpages that respond to different screen sizes by building a photo gallery with Flexbox, and a magazine article layout with CSS Grid.</p>
+			</div>
+		</div>
+	</foreignObject>
+</svg>
