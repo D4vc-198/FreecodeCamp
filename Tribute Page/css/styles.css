@@ -102,3 +102,48 @@ img{
     font-weight: bold;
     text-align: center;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .header{
+        display: block;
+    }
+
+    .title{
+        width: 100%;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    .info-container {
+        display: block;
+    }
+
+    .title-image {
+        width: 100%;
+    }
+
+    .img-info{
+        float: right;
+        width: 50%;
+    }
+
+    .tribute-info{
+        text-align: justify;
+        padding: 0;
+        width: 100%;
+        font-size: initial;
+    }
+
+    .proyectos{
+        width: 100%;
+    }
+
+    .lista-proyectos {
+        width: auto;
+        padding: 0 10px 10PX 10px;
+    }
+}
